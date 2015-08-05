@@ -11,9 +11,13 @@ json you see here.
 # Contents
 - dictionary.json: This is the raw data scraped from the dictionary. Unsurprisingly, it's in the format
 of a dictionary, i.e. ```{ "Word": "Definition" }```
+- dictionary.pretty.json: Prettified version of dictionary.json
 - graph.json: This is a graph representation of the dictionary. Each word is paired with a list of the
 words that define it
+- graph.pretty.json: Prettified version of graph.json
 - dictionary.txt: This is the plain text file (I converted it from ISO-8859-1 to UTF-8)
+- dictionary.csv: Raw data from the dictionary (based on dictionary.json) in the format ``` "Word","Definition" ```
+  - Some changes in content relating to quotes and escape sequences to ensure valid CSV.
 - main.jl: The julia script that parses the data
 - _.jl: My in-progress implementation of underscore in julia
 
